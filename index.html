@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置跳转</title>
+    <style>
+        /* 仅保留按钮核心样式 */
+        .btn-raised {
+            display: inline-block;
+            background-color: #1a73e8; /* 谷歌经典的蓝色 */
+            color: white !important;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.2s;
+        }
+
+        .btn-raised:hover {
+            background-color: #185abc; /* 悬停时深一点的蓝色 */
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+        }
+
+        .btn-raised:active {
+            background-color: #174ea6;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        <a class="btn btn-raised" href="intent:#Intent;action=android.settings.VOICE_INPUT_SETTINGS;end" target="_blank" rel="noopener">
+            更改 Voice Access 设置
+        </a>
+    </p>
+
+</body>
+</html>
